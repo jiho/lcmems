@@ -13,3 +13,7 @@ RnwWeave: Sweave
 LaTeX: pdfLaTeX
 
 AutoAppendNewline: Yes
+
+PythonType: conda
+PythonVersion: 3.10.14
+PythonPath: ~/.miniconda3/envs/cmems_local/bin/python3.10
