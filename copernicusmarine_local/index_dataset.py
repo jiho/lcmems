@@ -1,7 +1,6 @@
 import os
 os.environ['HDF5_USE_FILE_LOCKING']='FALSE'
 
-import glob
 import xarray as xr
 import pickle as pkl
 
