@@ -21,7 +21,7 @@ ds = lcmems.open_dataset(dsl.path[0])
 ds
 
 # get a subset of a dataset
-da = lcmems.subset_data(
+d_sub = lcmems.subset_data(
     ds,
     variables='RRS412',
     minimum_longitude = -16,
@@ -31,18 +31,21 @@ da = lcmems.subset_data(
     start_datetime = '2024-02-01',
     end_datetime = '2024-02-03'
 )
-da
+d_sub
 
 # plot the result
-lcmems.plot_array(da)
+lcmems.plot_array(d_sub)
 
 # fetch data around a point
-da = lcmems.fetch_data(
+# NB: should be the same data as above
+d_fet = lcmems.fetch_data(
     ds,
     variables='RRS412',
     datetime='2024-02-01',
-    lon=-16,
-    lat=10,
-    space_buffer=1,
-    datetime_buffer=[0,3]
+    lon=-15.5,
+    lat=10.5,
+    space_buffer=0.5,
+    datetime_buffer=[0,2]
 )
+d_fet
+lcmems.plot_array(d_fet)
