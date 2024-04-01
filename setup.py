@@ -27,6 +27,6 @@ setuptools.setup(
         'numpy',
         'pandas>=2.0',
         'xarray>=2023.01',
-        'plotnine'
+        'plotnine>=0.12.1'
     ],
 )

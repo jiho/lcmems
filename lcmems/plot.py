@@ -13,7 +13,7 @@ def plot_array(x):
     """
     df = x.to_dataframe(name='value').reset_index()
     p = ggplot(df) +\
-        facet_grid(rows='variable', cols='time') +\
+        facet_grid('variable ~ time') +\
         geom_raster(aes(x='longitude', y='latitude', fill='value')) +\
         coord_fixed() +\
         scale_x_continuous(expand=(0,0)) + scale_y_continuous(expand=(0,0))
