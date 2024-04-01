@@ -5,7 +5,7 @@ os.environ['HDF5_USE_FILE_LOCKING']='FALSE'
 # import and reload the latest changes from the local directory
 from importlib import reload
 import lcmems
-lcmems = reload(lcmems)
+reload(lcmems)
 
 # list products and datasets
 root = '/remote/complex/home/share/cmems_new'
