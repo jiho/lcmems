@@ -43,5 +43,5 @@ def list_datasets(root):
              'path':[os.path.join(root, p, d) for d in next(os.walk(root+'/'+p))[1]]}
         ) for p in products
     ]
-    datasets = pd.concat(datasets)
+    datasets = pd.concat(datasets).reset_index(drop=True)
     return(datasets)
