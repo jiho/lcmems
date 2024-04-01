@@ -110,7 +110,13 @@ def subset_data(
         'longitude': selected_lon,
         'latitude': selected_lat}) for variable in variables]
     # combine in a single array (like copernicusmarine.open_dataset())
-    d_sel = xr.concat(d_sel, dim='variable')
+    # NB: only keep common attributes
+    d_sel = xr.concat(d_sel, dim='variable', combine_attrs='drop_conflicts')
+    # define the variables as an explicit coordinate
+    d_sel = d_sel.assign_coords({'variable': variables})
+    # and remove the name of the array
+    # (which was the name of the first variable)
+    d_sel.name = None
 
     if load:
         # actually read the data from disk
