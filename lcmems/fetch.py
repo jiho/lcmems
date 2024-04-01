@@ -15,7 +15,7 @@ def fetch_data(
         datetime (datetime64[ns],str): target date (and time). When specified
           as a string, should be YYYY-MM-DD, possibly with HH:MM:SS. When not a
           string it should be a datetime64[ns] object (from numpy).
-      lon,lat (float): target coordinates
+      lon,lat (float): target coordinates.
       space_buf (float, list[2]): buffer around lon,lat in degrees. If it is a
           single number, the same buffer will be applied to both sides of the 
           target point. If it is a list it needs to be of length 2 and specify the
@@ -57,7 +57,7 @@ def fetch_data(
         datetime_buffer=[datetime_buffer,datetime_buffer]
     
     da = subset_data(
-        dataset=datasets,
+        dataset=dataset,
         variables=variables,
         minimum_longitude = lon - space_buffer,
         maximum_longitude = lon + space_buffer,
