@@ -59,11 +59,11 @@ def fetch_data(
     da = subset_data(
         dataset=dataset,
         variables=variables,
-        minimum_longitude = lon - space_buffer,
-        maximum_longitude = lon + space_buffer,
-        minimum_latitude = lat - space_buffer,
-        maximum_latitude = lat - space_buffer,
-        start_datetime = datetime - np.timedelta64(datetime_buffer[1], 'D'),
+        minimum_longitude = lon - space_buffer[0],
+        maximum_longitude = lon + space_buffer[1],
+        minimum_latitude = lat - space_buffer[0],
+        maximum_latitude = lat + space_buffer[1],
+        start_datetime = datetime - np.timedelta64(datetime_buffer[0], 'D'),
         end_datetime = datetime + np.timedelta64(datetime_buffer[1], 'D'),
         **kwargs
     )
