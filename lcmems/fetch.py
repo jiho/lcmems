@@ -1,5 +1,5 @@
 import numpy as np
-from subset import subset_data
+from .subset import subset_data
 
 def fetch_data(
     dataset,
