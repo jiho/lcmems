@@ -25,7 +25,7 @@ setuptools.setup(
     python_requires='>=3.8',
     install_requires=[
         'numpy',
-        'pandas',
-        'xarray',
+        'pandas>=2.0',
+        'xarray>=2022.10',
     ],
 )
