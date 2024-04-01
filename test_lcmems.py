@@ -30,6 +30,7 @@ da = lcmems.subset_data(ds,
     start_datetime = '2024-02-01',
     end_datetime = '2024-02-03'
 )
-from matplotlib import pyplot as plt
-da[0,2,:,:].plot()
-plt.show()
+da
+
+# plot the result
+lcmems.plot_array(da)
