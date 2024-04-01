@@ -11,6 +11,8 @@ def open_dataset(path):
     Returns:
         A xarray.Dataset object indexing the whole dataset.
     """
+    # TODO pre-filter by year to be faster
+
     # list all index files
     index_files = glob.glob(path+'/*_xarray.pickle')
     index_files.sort()
