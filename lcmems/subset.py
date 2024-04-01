@@ -31,9 +31,9 @@ def subset_data(
           when accessed (which requires the data to still be present).
 
     Returns:
-        A xarray.DataArray() with the data, with coodinates: variables, time,
-        longitude, latitude. The data can be included (load = True) of lazyly
-        loaded (load = False).
+        A xarray.DataArray() containing the data, with coodinates: variables, 
+        time, longitude, latitude. The data can be included (load = True) or
+        lazyly loaded (load = False).
     """
 
     ## Check arguments
