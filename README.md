@@ -8,7 +8,7 @@
 
 Install `lcmems` from this repository
 
-    pip3 install git+https://github.com/jiho/lcmems
+    pip install git+https://github.com/jiho/lcmems
 
 This should install other python packages `lcmems` depends on. 
 
