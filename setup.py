@@ -7,7 +7,7 @@ setuptools.setup(
     # Metadata
     name='lcmems',
     version='0.1',
-    description='Fetch data from a local copy of CMEMS',
+    description='Read from a local copy of CMEMS datasets',
     url='https://github.com/jiho/lcmems',
     author='Jean-Olivier Irisson',
     author_email='irisson@normalesup.org',

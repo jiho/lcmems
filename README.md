@@ -1,5 +1,5 @@
 
-# Access a local copy of CMEMS datasets
+# Read from a local copy of CMEMS datasets
 
 `lcmems` allows to browse through and read data from a local copy of the data files, typically downloaded with `copernicusmarine.get()`. Indeed, for large jobs, downloading the whole archive and working from it is often faster than working fully online.
 
