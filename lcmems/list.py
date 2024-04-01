@@ -1,8 +1,6 @@
 import os
 import pandas as pd
 
-# root='/remote/complex/home/share/cmems_new/'
-
 def list_products(root):
     """List products present in `root`
     
