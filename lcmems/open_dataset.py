@@ -16,7 +16,7 @@ def open_dataset(path):
     # list all index files
     index_files = glob.glob(path+'/*_xarray.pickle')
     index_files.sort()
-    index_files
+    # index_files
 
     # read all index files
     index = [pickle.load(open(f,'rb')) for f in index_files]

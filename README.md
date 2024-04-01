@@ -1,16 +1,16 @@
 
 # Access a local copy of CMEMS datasets
 
-`copernicusmarine_local` mimics the behaviour of some functions of `copernicusmarine` but reads from a local copy of the data files, typically downloaded with `copernicusmarine.get()`. For large jobs, downloading the whole archive and working from it is faster than working fully online.
+`lcmems` allows to browse through and read data from a local copy of the data files, typically downloaded with `copernicusmarine.get()`. Indeed, for large jobs, downloading the whole archive and working from it is often faster than working fully online.
 
 
 ## Installation
 
-Install `copernicusmarine_local` from this repository
+Install `lcmems` from this repository
 
-    pip3 install git+https://github.com/jiho/copernicusmarine_local
+    pip3 install git+https://github.com/jiho/lcmems
 
-This should install other python packages `apeep` depends on. 
+This should install other python packages `lcmems` depends on. 
 
 # Usage
 

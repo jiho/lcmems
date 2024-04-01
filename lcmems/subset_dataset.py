@@ -17,7 +17,7 @@ def subset_data(
 
     Args:
         dataset: object returned by open_dataset().
-        variables (list[str]): names of the variables to extract. Default: all.
+        variables (str, list[str]): names of the variables to extract. Default: all.
         minimum_longitude (float)
         maximum_longitude (float): longitude range to extract. In [-180, 180].
         minimum_latitude (float)

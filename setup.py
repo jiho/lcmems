@@ -5,10 +5,10 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     # Metadata
-    name='copernicusmarine_local',
+    name='lcmems',
     version='0.1',
     description='Fetch data from a local copy of CMEMS',
-    url='https://github.com/jiho/copernicusmarine_local',
+    url='https://github.com/jiho/lcmems',
     author='Jean-Olivier Irisson',
     author_email='irisson@normalesup.org',
     license='GPLv3',
@@ -21,7 +21,10 @@ setuptools.setup(
         'Development Status :: 3 - Alpha'
     ],
     # Content
-    python_requires='>=3.9',
+    python_requires='>=3.8',
     install_requires=[
+        'numpy',
+        'pandas',
+        'xarray',
     ],
 )
