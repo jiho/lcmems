@@ -28,7 +28,7 @@ da = lcmems.subset_data(ds,
     minimum_latitude = 10,
     maximum_latitude = 11,
     start_datetime = '2024-02-01',
-    end_datetime = '2024-02-10'
+    end_datetime = '2024-02-03'
 )
 from matplotlib import pyplot as plt
 da[0,2,:,:].plot()
