@@ -16,6 +16,8 @@ def list_products(root):
             product : name of the product
             path    : full path to the product
     """
+    if not os.path.isdir(root):
+        raise FileNotFoundError(root + ' does not exist')
     products = next(os.walk(root))[1]
     products.sort()
     products = pd.DataFrame({'product':products, 'path':[os.path.join(root, p) for p in products]})
@@ -35,6 +37,8 @@ def list_datasets(root):
             product : name of the product that contains this dataset
             path    : full path to the dataset
     """
+    if not os.path.isdir(root):
+        raise FileNotFoundError(root + ' does not exist')
     products = next(os.walk(root))[1]
     datasets = [
         pd.DataFrame(
