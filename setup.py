@@ -21,6 +21,7 @@ setuptools.setup(
         'Development Status :: 3 - Alpha'
     ],
     # Content
+    packages=setuptools.find_packages(),
     python_requires='>=3.8',
     install_requires=[
         'numpy',
