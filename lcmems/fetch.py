@@ -3,7 +3,8 @@ from .subset import subset_data
 
 def fetch_data(
     dataset,
-    variables, datetime, lon, lat,
+    datetime, lon, lat,
+    variables=None,
     space_buffer=0.5,
     datetime_buffer=0,
     **kwargs):
