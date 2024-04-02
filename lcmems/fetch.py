@@ -12,20 +12,20 @@ def fetch_data(
     
     Args:
         dataset: object returned by open_dataset().
-        variables (str, list[str]): names of the variables to extract. Default: all.
         datetime (datetime64[ns],str): target date (and time). When specified
           as a string, should be YYYY-MM-DD, possibly with HH:MM:SS. When not a
           string it should be a datetime64[ns] object (from numpy).
-      lon,lat (float): target coordinates.
-      space_buf (float, list[2]): buffer around lon,lat in degrees. If it is a
+        variables (str, list[str]): names of the variables to extract. Default: all.
+        lon,lat (float): target coordinates.
+        space_buf (float, list[2]): buffer around lon,lat in degrees. If it is a
           single number, the same buffer will be applied to both sides of the 
           target point. If it is a list it needs to be of length 2 and specify the
           buffer before and after the point.
-      date_buf (int, list[2]): buffer around the target date in days. As above
+        date_buf (int, list[2]): buffer around the target date in days. As above
           if it is a single number it will be applied to both sides of date. Otherwise
           it needs to be a list of length 2 that specifies the number of days
           before and after the target date
-      **kwargs: passed to lcmems.subset_data()
+        **kwargs: passed to lcmems.subset_data()
 
     Returns:
         A xarray.DataArray() containing the data, with coodinates: variables, 
