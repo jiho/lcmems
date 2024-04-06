@@ -27,6 +27,8 @@ setuptools.setup(
         'numpy',
         'pandas>=2.0',
         'xarray>=2023.01',
-        'plotnine>=0.12.1'
+        'plotnine>=0.12.1',
+        'netcdf4',
+        'dask'
     ],
 )
