@@ -109,6 +109,7 @@ def subset_data(
         'time': selected_time,
         'longitude': selected_lon,
         'latitude': selected_lat}) for variable in variables]
+    # TODO check if we can select several variables at once, which may be faster
     # combine in a single array (like copernicusmarine.open_dataset())
     # NB: only keep common attributes
     d_sel = xr.concat(d_sel, dim='variable', combine_attrs='drop_conflicts')
